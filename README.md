@@ -1,4 +1,4 @@
-﻿# modulo2-desafio1
+﻿# MÓDULO 2 > DESAFÍO 1: FLEXBOX
 
  LINK DEPLOY: https://joaquin-lr.github.io/modulo2-desafio1/
 
