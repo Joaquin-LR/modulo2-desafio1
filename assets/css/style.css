@@ -1,0 +1,191 @@
+/* PREFIERO QUE LA PÁGINA NO SE VEA TOTALMENTE EXTENDIDA PARA RESPETAR EN SU TOTALIDAD EL PARECIDO A ESCALA CON LA PLANTILLA */
+/* PARA HACER LO CONTRARIO, CAMBIAR LINEAS 16, 17, Y 22. LUEGO DEJAR UN min-height: 100vh; PARA CADA CAJA O MODIFICAR CONTENEDOR*/
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Alinea los elementos en una fila */
+    min-height: max-content;
+    margin-top: 21px;
+}
+
+.caja {
+    border: 0.5px solid #BEC1BB;
+    flex: 1;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* CAJA 1: ASIDE */
+.caja1 {
+    background-color: white;
+}
+
+.caja1 img { /* Esto aplica a todas las img del ASIDE */
+    border-radius: 50%;
+    /* border: 1px solid #E8EBE4; */
+}
+
+.caja1 p {
+    font-size: 14px;
+}
+
+.subcaja {
+    border: 1px solid #E8EBE4;
+}
+
+/* Usuario */
+.user {
+    display: flex;
+    align-items: center;
+    padding: 14px 30px 14px 30px;
+}
+
+.user img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px; /* Agrega un pequeño margen entre la imagen y el siguiente contenido */
+}
+
+.status-user {
+    flex: 1; /* Permite que el contenido dentro de .status ocupe todo el espacio disponible */
+}
+
+.status-user h2, .status-user p {
+    margin: 0; /* Elimina el margen predeterminado para acercar el texto a la imagen */
+}
+
+.status-user h2 {
+    margin: 0 0 2px 2px;
+}
+
+.status-user p {
+    color: #828485;
+    font-size: 10px;
+    margin: 0;
+}
+
+.icons {
+    display: flex;
+    color: #828485;
+    align-items: center; /* Alinear los íconos verticalmente */
+    /* margin-right: 20px; */
+    gap: 15px; /* Espacio entre los íconos */
+    padding-left: 60px;
+    transform: translate(5px,0);
+}
+
+.mensajes {
+    font-size: 120%;   
+}
+
+.barras {
+    font-size: 150%;
+    transform: translate(0,-2px);
+}
+
+/* Nuevo Chat */
+.nuevo-chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 43px 20px; 
+}
+
+.nuevo-chat button {
+    background-color: #A491D2; /* Fondo morado */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+    padding: 15px 48px; /* Sirve para agradandar el tamaño del boton sin agrandar la letra */
+    margin: 0px 30px;
+    font-size: 16px;
+}
+
+.nuevo-chat button:hover {
+    background-color: #CDC3E6; /* Cambia el color de fondo al pasar el cursor */
+}
+
+.nuevo-chat button:focus {
+    background-color: #BEC1BB; /* Cambia el color de fondo al pasar al hacer clic */
+}
+
+/* Contactos */
+.contacto img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.contacto{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+}
+
+.status-contacto h2, .status-contacto p {
+    margin: 0 0 0 10px;
+}
+
+.magdalena {
+    border-bottom: none;
+}
+
+
+/* CAJA 2: MAIN */
+.caja2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* Disposición en columnas, que incide en las dos siguientes y sus comentarios */
+    justify-content: center; /* Centra en vertical */
+    align-items: center;  /* Centra en horizontal */
+    background-color: #F8F8F8;
+   }
+
+.caja2 img {
+    margin: 25px;
+    transform: translate(-25px, 0);  /* Aquí intenté imitar hasta lo descentrada de la imagen jaja */
+}
+
+.caja2 h1, .caja2 p {
+    margin: 0%;
+    color: #1B1F21 ;
+    text-align: center;
+}
+
+.caja2 p {
+    font-size: 16px;
+}
+
+.caja2 img {
+    width: 255px;
+    height: 255px;
+    padding: 0px 380px;
+}
+
+.manitos-y-texto {
+    transform: translate(0, -50px);
+}
+
+span  {
+    font-weight: bold;
+}
